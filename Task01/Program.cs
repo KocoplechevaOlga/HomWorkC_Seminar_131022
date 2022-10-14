@@ -5,20 +5,22 @@ Console.WriteLine("Введите первое целое число: ");
 int a = Convert.ToInt32 (Console.ReadLine());
 Console.WriteLine("Введите второе целое число: ");
 int b = Convert.ToInt32 (Console.ReadLine());
-Console.WriteLine("Введите третье целое число: ");
-int c = Convert.ToInt32 (Console.ReadLine());
 
-int max = a;
-int min = a;
 
-if (b > max) max = b;
-if (c > max) max = c;
+if (b > a) 
+{
+Console.Write("Max= ");
+Console.WriteLine(b);
 
-if (b < min) min = b;
-if (c < min) min = c;
+Console.Write("Min= ");
+Console.WriteLine(a);
+}
 
-Console.Write("Максимальное из трех чисел: ");
-Console.WriteLine(max);
+else
+{
+Console.Write("Max= ");
+Console.WriteLine(a);
 
-Console.Write("Минимальное из трех чисел: ");
-Console.WriteLine(min);
+Console.Write("Min= ");
+Console.WriteLine(b);
+}
