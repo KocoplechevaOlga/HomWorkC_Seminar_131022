@@ -9,13 +9,6 @@ Console.WriteLine("Результат:");
 
 while(count <= number)
 {
-    if (count % 2 ==0)
-    {
-        Console.WriteLine(count);
-        count = count+1;
-    }
-    else
-    {
-        count = count+1;
-    }
+  if (count % 2 ==0) Console.WriteLine(count);
+  count++; 
 }
